@@ -2,11 +2,13 @@
 
 # CS255
 
+sum = 0
+
 def squaring(num):
-    sum = 0
-    for x in range(1, num):
-        for y in range(1, x):
-            sum++
-    return sum += 1
+    global sum
+    for x in range(0, num):
+        for y in range(0, num):
+            sum += 1
+    return sum
 
 print squaring(5)
